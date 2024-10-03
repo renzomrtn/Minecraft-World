@@ -1,0 +1,68 @@
+/* body {
+    background-color: #1a1a1a !important;
+} */
+body {
+    background-image: url(images/guide/mc.webp);
+}
+.hero {
+    background-size: cover;
+    height: 30rem;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 15rem;
+}
+h3 {
+    color: #39ff14;
+}
+.container-content {
+    margin-bottom: 15rem !important;
+}
+.featured-builds img {
+    border-radius: 8px;
+    width: 100%;
+    border: 2px solid #39ff14;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.featured-builds img:hover {
+    transform: scale(1.05); /* Zoom in */
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.3); /* Add shadow */
+}
+/* Media Queries */
+
+/* For tablets (max-width: 768px) */
+@media (max-width: 768px) {
+    .hero {
+        height: 50rem; /* Reduce height for smaller screens */
+    }
+    h3 {
+        font-size: 1.8rem; /* Adjust heading size */
+    }
+    .container-content {
+        margin-bottom: 10rem !important; /* Adjust spacing */
+    }
+    .featured-builds img {
+        border: 1px solid #39ff14; /* Reduce border size */
+    }
+}
+/* For mobile phones (max-width: 576px) */
+@media (max-width: 576px) {
+    .hero {
+        height: 40rem; /* Reduce height further for mobile */
+    }
+    h3 {
+        font-size: 1.5rem; /* Further adjust heading size */
+    }
+    .container-content {
+        margin-bottom: 7rem !important; /* Adjust spacing */
+    }
+    .featured-builds img {
+        width: 100%; /* Ensure images fit properly */
+        border: 1px solid #39ff14;
+    }
+    .navbar-brand {
+        font-size: 1.2rem; /* Adjust navbar brand size */
+    }
+}

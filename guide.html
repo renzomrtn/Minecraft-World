@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minecraft World - Guide</title>
+    <link rel="icon" type="image/png" href="images/logo.png">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- CSS -->
+    <link href="guide.css" rel="stylesheet">
+    <link href="shared.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body class="custom-cursor">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Minecraft World</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <!-- HOME dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="index.html" id="homeDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">HOME</a>
+                        <ul class="dropdown-menu" aria-labelledby="homeDropdown">
+                            <li><a class="dropdown-item" href="index.html#featured">Featured Builds</a></li>
+                            <li><a class="dropdown-item" href="index.html#updates">New Updates</a></li>
+                        </ul>
+                    </li>
+                    <!-- GUIDE dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" id="guideDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">GUIDE</a>
+                        <ul class="dropdown-menu" aria-labelledby="guideDropdown">
+                            <li><a class="dropdown-item" href="guide.html#mobs">Enemy Mobs</a></li>
+                            <li><a class="dropdown-item" href="guide.html#tools">Starting Tools</a></li>
+                        </ul>
+                    </li>
+                    <!-- BUILDS (no dropdown) -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="builds.html">BUILDS</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="empty" id="top"></div>
+    <!-- NOTE: I am using imported images via the internet so Live Server might not read the images. Just run the site by the html file -->
+    <!-- Guide Section -->
+    <!-- Mob Gallery-->
+    <div class="container my-5 container-content mobs" id="mobs">
+        <h2 class="text-center">Enemy Mobs</h2>
+        <p class="text-center">Learn about the hostile creatures you'll encounter in Minecraft, and prepare to defend yourself!</p>
+    
+        <div id="mobCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card gallery-card">
+                                <img src="https://static.wikia.nocookie.net/minecraft_gamepedia/images/8/87/Zombie_JE3_BE2.png/revision/latest?cb=20191227070025" class="card-img-top" alt="Zombie">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">Zombie</h5>
+                                    <p class="card-text">A common enemy that spawns at night. Zombies can swarm you if you're not careful!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card gallery-card">
+                                <img src="https://static.wikia.nocookie.net/minecraft_gamepedia/images/4/47/Skeleton_JE6_BE4.png/revision/latest?cb=20210227130136" class="card-img-top" alt="Skeleton">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">Skeleton</h5>
+                                    <p class="card-text">Skeletons attack from a distance with their bows. Avoid their arrows to stay alive.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card gallery-card">
+                                <img src="https://static.wikia.nocookie.net/minecraft_gamepedia/images/5/5b/Creeper_JE2_BE1.png/revision/latest?cb=20191229172043" class="card-img-top" alt="Creeper">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">Creeper</h5>
+                                    <p class="card-text">Explodes when near you. Be cautious around these silent but deadly mobs.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card gallery-card">
+                                <img src="https://static.wikia.nocookie.net/minecraft_gamepedia/images/5/5a/Bogged2.png/revision/latest?cb=20240218153313" class="card-img-top" alt="Bogged">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">Bogged</h5>
+                                    <p class="card-text">Variant of a skeleton found in swamp biomes. It is an undead hostile mob that can shoot poisoned arrows.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card gallery-card">
+                                <img src="https://static.wikia.nocookie.net/minecraft_gamepedia/images/3/38/Stray_JE2_BE4.png/revision/latest?cb=20191001180649" class="card-img-top" alt="Stray">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">Stray</h5>
+                                    <p class="card-text">Variant of a skeleton that spawns in snow-covered biomes. Fires tipped arrows of Slowness from their bows.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card gallery-card">
+                                <img src="https://static.wikia.nocookie.net/minecraft_gamepedia/images/3/39/Phantom_JE2.gif/revision/latest?cb=20180706142237" class="card-img-top" alt="Phantom">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">Phantom</h5>
+                                    <p class="card-text">Flying undead hostile mobs that spawn when the player hasn't slept for 3 or more in-game days.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card gallery-card">
+                                <img src="https://static.wikia.nocookie.net/minecraft_gamepedia/images/f/fd/Plains_Zombie_Villager_Base.png/revision/latest?cb=20211013222051" class="card-img-top" alt="Zombie Villager">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">Zombie Villager</h5>
+                                    <p class="card-text">Variant of zombie that can be cured into a villager using a golden apple while it's under the effect of Weakness.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card gallery-card">
+                                <img src="https://static.wikia.nocookie.net/minecraft_gamepedia/images/e/e4/Husk_JE2_BE2.png/revision/latest?cb=20190510101810" class="card-img-top" alt="Husk">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">Husk</h5>
+                                    <p class="card-text">Variant of a zombie that spawns in deserts. They do not burn in sunlight and inflict Hunger with their unarmed attacks.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card gallery-card">
+                                <img src="https://static.wikia.nocookie.net/minecraft_gamepedia/images/d/dd/Slime_JE3_BE2.png/revision/latest?cb=20191230025505" class="card-img-top" alt="Slime">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">Slime</h5>
+                                    <p class="card-text">Bouncy, cube-shaped hostile mobs that spawn deep underground in particular chunks, or in swamp biomes.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card gallery-card">
+                                <img src="https://static.wikia.nocookie.net/minecraft_gamepedia/images/e/e6/Witch.png/revision/latest?cb=20220611062944" class="card-img-top" alt="Witch">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">Witch</h5>
+                                    <p class="card-text">Uses potions in combat, both in the form of weapons as splash potions and in the form of drinkable potions for defense.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card gallery-card">
+                                <img src="https://static.wikia.nocookie.net/minecraft_gamepedia/images/2/22/Silverfish_JE1_BE1.gif/revision/latest?cb=20200125235834" class="card-img-top" alt="Silverfish">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">Silverfish</h5>
+                                    <p class="card-text">Infest stone and deepslate blocks in mountains, strongholds, igloo basements and woodland mansions.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card gallery-card">
+                                <img src="https://static.wikia.nocookie.net/minecraft_gamepedia/images/6/6e/Endermite.gif/revision/latest?cb=20200126021254" class="card-img-top" alt="Endermite">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">Endermite</h5>
+                                    <p class="card-text">An endermite may spawn when a player throws an ender pearl.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card gallery-card">
+                                <img src="https://static.wikia.nocookie.net/minecraft_gamepedia/images/d/d5/Ghast_JE2_BE2.gif/revision/latest?cb=20201108222940" class="card-img-top" alt="Ghast">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">Ghast</h5>
+                                    <p class="card-text">Large white floating jellyfish ghosts that live in the Nether and shoot explosive fireballs at the player.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card gallery-card">
+                                <img src="https://static.wikia.nocookie.net/minecraft_gamepedia/images/c/cd/Wither_Skeleton.png/revision/latest?cb=20191229162539" class="card-img-top" alt="Wither Skeleton">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">Wither Skeleton</h5>
+                                    <p class="card-text">Tall black variants of skeletons equipped with stone swords that inflict the poison-like Wither effect.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card gallery-card">
+                                <img src="https://static.wikia.nocookie.net/minecraft_gamepedia/images/e/ed/Magma_Cube.png/revision/latest?cb=20190805151823" class="card-img-top" alt="Magma Cube">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">Magma Cube</h5>
+                                    <p class="card-text">Behaves similarly to a slime, but is fireproof, jumps higher and less often, and deals more damage</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card gallery-card">
+                                <img src="https://static.wikia.nocookie.net/minecraft_gamepedia/images/5/5a/Blaze.gif/revision/latest?cb=20230214143150" class="card-img-top" alt="Blaze">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">Blaze</h5>
+                                    <p class="card-text">Spawns in nether fortresses and attacks at range by firing fireballs or with their spinning rods.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card gallery-card">
+                                <img src="https://static.wikia.nocookie.net/minecraft_gamepedia/images/4/41/Hoglin_JE3.png/revision/latest?cb=20240729214720" class="card-img-top" alt="Hoglin">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">Hoglin</h5>
+                                    <p class="card-text">Attacks by thrusting its tusks upward, which can also launch its target a short distance into the air.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card gallery-card">
+                                <img src="https://static.wikia.nocookie.net/minecraft_gamepedia/images/5/5b/Piglin_Brute.png/revision/latest?cb=20230723003220" class="card-img-top" alt="Piglin Brute">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">Piglin Brute</h5>
+                                    <p class="card-text">Hostile and stronger variant of piglins that appears in all types of bastion remnants.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card gallery-card">
+                                <img src="https://static.wikia.nocookie.net/minecraft_gamepedia/images/e/e3/Zoglin.png/revision/latest?cb=20220530015046" class="card-img-top" alt="Zoglin">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">Zoglin</h5>
+                                    <p class="card-text">Undead hostile mob created when a hoglin enters the Overworld or End.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card gallery-card">
+                                <img src="https://static.wikia.nocookie.net/minecraft_gamepedia/images/9/94/Guardian.gif/revision/latest?cb=20190925152101" class="card-img-top" alt="Guardian">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">Guardian</h5>
+                                    <p class="card-text">Spawns in and around ocean monuments. They attack with laser beam, and inflict retaliatory damage when damaged by a melee attack.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card gallery-card">
+                                <img src="https://static.wikia.nocookie.net/minecraft_gamepedia/images/7/75/Elder_Guardian.gif/revision/latest?cb=20190925152022" class="card-img-top" alt="Elder Guardian">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">Elder Guardian</h5>
+                                    <p class="card-text">Stronger and larger variant of a guardian and attacks like a guardian, but also applies Mining Fatigue.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card gallery-card">
+                                <img src="https://static.wikia.nocookie.net/minecraft_gamepedia/images/5/55/Pillager_JE3.png/revision/latest/scale-to-width-down/1000?cb=20220714205247" class="card-img-top" alt="Pillager">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">Pillager</h5>
+                                    <p class="card-text">Armed with crossbows found in wandering patrols, in pillager outposts, or as participants in raids.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card gallery-card">
+                                <img src="https://static.wikia.nocookie.net/minecraft_gamepedia/images/c/c1/Evoker_JE2.png/revision/latest?cb=20220613062102" class="card-img-top" alt="Evoker">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">Evoker</h5>
+                                    <p class="card-text">Spell-casting illager found in woodland mansions and raids, and the only source of the totem of undying.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card gallery-card">
+                                <img src="https://static.wikia.nocookie.net/minecraft_gamepedia/images/8/84/Vex_JE4.gif/revision/latest?cb=20221123024346" class="card-img-top" alt="Vex">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">Vex</h5>
+                                    <p class="card-text">It wields an iron sword, can phase through walls, and is only summoned as one of the evoker's attacks.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card gallery-card">
+                                <img src="https://static.wikia.nocookie.net/minecraft_gamepedia/images/b/b7/Vindicator_JE3.png/revision/latest?cb=20220611074851" class="card-img-top" alt="Vindicator">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">Vindicator</h5>
+                                    <p class="card-text">Illager equipped with an iron axe. Vindicators appear in woodland mansions and participate in raids.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card gallery-card">
+                                <img src="https://static.wikia.nocookie.net/minecraft_gamepedia/images/9/98/Breeze.png/revision/latest/scale-to-width-down/1000?cb=20240801215038" class="card-img-top" alt="Breeze">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">Breeze</h5>
+                                    <p class="card-text">Floating hostile mob that is similar to the blaze that spawns in trial chambers. It attacks at range by firing wind charges.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card gallery-card">
+                                <img src="https://static.wikia.nocookie.net/minecraft_gamepedia/images/0/06/Shulker.png/revision/latest?cb=20200107095352" class="card-img-top" alt="Shulker">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">Shulker</h5>
+                                    <p class="card-text">Found in end cities, It hides in its shell to protect itself and its attacks inflict Levitation.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card gallery-card">
+                                <img src="https://static.wikia.nocookie.net/minecraft_gamepedia/images/3/3b/Wither_JE2_BE2.png/revision/latest/scale-to-width-down/1000?cb=20240729214341" class="card-img-top" alt="Wither">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">Wither</h5>
+                                    <p class="card-text">Player-constructed and highly destructive boss mob that can hover in mid-air and fire explosive at its target.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card gallery-card">
+                                <img src="https://static.wikia.nocookie.net/minecraft_gamepedia/images/1/1a/Warden.gif/revision/latest?cb=20220218034755" class="card-img-top" alt="Warden">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">Warden</h5>
+                                    <p class="card-text">Extremely powerful mob boss summoned by sculk shriekers in the deep dark biome.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card gallery-card">
+                                <img src="https://static.wikia.nocookie.net/minecraft_gamepedia/images/0/0a/Ender_Dragon.gif/revision/latest?cb=20210107043116" class="card-img-top" alt="Ender Dragon">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">Ender Dragon</h5>
+                                    <p class="card-text">Giant flying boss mob found when first entering the End. It guards the portal that allows return to the Overworld.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#mobCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#mobCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    
+    <!-- Tool Gallery -->
+    <div class="container my-5 container-content" id="tools">
+        <h2 class="text-center">Starting Crafts</h2>
+        <p class="text-center">Learn about the basic tools that you have to make to survive.</p>
+        <div id="toolCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card gallery-card">
+                                <img src="images/guide/crafting-grid (8).png" class="card-img-top" alt="Wooden Planks">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">Wooden Planks</h5>
+                                    <p>The raw wood you got from a tree can be crafted into more planks which can be used for tools.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card gallery-card">
+                                <img src="images/guide/crafting-grid (6).png" class="card-img-top" alt="Crafting Table">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">Crafting Table</h5>
+                                    <p>Crafting table makes is for making all the tools and other materials you're gonna need.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card gallery-card">
+                                <img src="images/guide/crafting-grid (5).png" class="card-img-top" alt="Wooden Axe">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">Wooden Axe</h5>
+                                    <p>Use this to chop down trees more effectively and faster rather than using your hands.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card gallery-card">
+                                <img src="images/guide/crafting-grid (2).png" class="card-img-top" alt="Wooden Pickaxe">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">Wooden Pickaxe</h5>
+                                    <p>Use this to mine stones and minerals more effectively and faster rather than using your hands.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card gallery-card">
+                                <img src="images/guide/crafting-grid (1).png" class="card-img-top" alt="Wooden Sword">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">Wooden Sword</h5>
+                                    <p>Use this to gather food and kill mobs more effectively and faster rather than using your hands.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card gallery-card">
+                                <img src="images/guide/crafting-grid (4).png" class="card-img-top" alt="Wooden Shovel">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">Wooden Shovel</h5>
+                                    <p>Use this to collect kinds of block effectively and faster rather than using your hands.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card gallery-card">
+                                <img src="images/guide/crafting-grid (7).png" class="card-img-top" alt="Chest">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">Chest</h5>
+                                    <p>Use this to store tools and materials more effectively rather than using your small inventory.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card gallery-card">
+                                <img src="images/guide/crafting-grid (9).png" class="card-img-top" alt="Wooden Door">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">Wooden Door</h5>
+                                    <p>Use this to provide door to your shelter to protect you from mobs and even breath underwater.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card gallery-card">
+                                <img src="images/guide/crafting-grid (3).png" class="card-img-top" alt="Furnace">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">Furnace</h5>
+                                    <p>Use this to cook your food to replenish your hunger bar.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#toolCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#toolCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="top">
+            <a class="back" href="#top">Back To Top</a>
+        </div>
+        <br>
+        <div class="left">
+            <p>Created by <a href="https://renzomrtn.github.io/portfolio" target="_blank">Martin Fajardo</a></p>
+            <p>Inspired by <a href="https://www.minecraft.net/en-us" target="_blank">Official Minecraft Website</a></p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

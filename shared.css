@@ -1,0 +1,69 @@
+body {
+    background-color: #3d3c3c;
+    font-family: 'Press Start 2P', cursive;
+    color: #eaeaea;
+}
+.navbar {
+    background-color: #0d0d0d;
+    position: sticky !important;
+    top: 0;
+    z-index: 1000;
+    height: 6rem;
+}
+.nav-link.active {
+    color: #39ff14 !important;
+}
+.nav-link {
+    margin: 0 1rem 0 1rem;
+}
+.navbar-brand, .nav-link {
+    color: #eaeaea !important;
+}
+.nav-link:hover {
+    color: #39ff14 !important;
+}
+.footer {
+    background-color: #0d0d0d;
+    color: #eaeaea;
+    font-size: small;
+    padding: 15px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.top {
+    width: 60%;
+    text-align: center;
+}
+.left {
+    width: 60%;
+}
+.back {
+    font-size: smaller;
+}
+a {
+    color: #39ff14;
+    text-decoration: none;
+}
+a:hover {
+    color: #00ff00;
+    cursor:inherit;
+}
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #afaeae;
+}
+::-webkit-scrollbar-thumb {
+    background: #208f04;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #114b03;
+}
+.custom-cursor {
+    cursor: url(images/cursor.cur),auto !important;
+}

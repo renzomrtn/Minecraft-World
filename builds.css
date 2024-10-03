@@ -1,0 +1,50 @@
+body {
+    background-image: url(images/guide/mc.webp);
+}
+h2 {
+    color: #39ff14;
+}
+.featured-builds img {
+    border-radius: 8px;
+    width: 100%;
+    border: 1px solid #fdfdfd;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.featured-builds img:hover {
+    transform: scale(1.05); /* Zoom in */
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.3); /* Add shadow */
+}
+.featured-builds {
+    margin-bottom: 2rem;
+}
+/* Media queries */
+
+/* For small devices (phones, less than 576px) */
+@media (max-width: 575.98px) {
+    h2 {
+        font-size: 1.5rem;
+    }
+    
+    .featured-builds img {
+        width: 90%; /* Adjust image size */
+    }
+    
+    .navbar-brand {
+        font-size: 1.2rem;
+    }
+}
+
+/* For medium devices (tablets, 576px and up) */
+@media (min-width: 576px) and (max-width: 768px) {
+    h2 {
+        font-size: 2rem;
+    }
+    
+    .featured-builds img {
+        width: 95%;
+    }
+    
+    .navbar-brand {
+        font-size: 1.5rem;
+    }
+}

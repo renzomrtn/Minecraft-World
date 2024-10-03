@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minecraft World</title>
+    <link rel="icon" type="image/png" href="images/logo.png">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- CSS -->
+    <link href="index.css" rel="stylesheet">
+    <link href="shared.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body class="custom-cursor">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Minecraft World</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <!-- HOME dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" id="homeDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">HOME</a>
+                        <ul class="dropdown-menu" aria-labelledby="homeDropdown">
+                            <li><a class="dropdown-item" href="index.html#featured">Featured Builds</a></li>
+                            <li><a class="dropdown-item" href="index.html#updates">New Updates</a></li>
+                        </ul>
+                    </li>
+                    <!-- GUIDE dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="guideDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">GUIDE</a>
+                        <ul class="dropdown-menu" aria-labelledby="guideDropdown">
+                            <li><a class="dropdown-item" href="guide.html#section1">Enemy Mobs</a></li>
+                            <li><a class="dropdown-item" href="guide.html#section2">Starting Tools</a></li>
+                        </ul>
+                    </li>
+                    <!-- BUILDS (no dropdown) -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="builds.html">BUILDS</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="top" id="top"></div>
+    <!-- Hero Section -->
+    <div class="hero">
+
+    </div>
+
+    <!-- Featured Builds Section -->
+    <div class="container my-5 container-content" id="featured">
+        <h3 class="text-center">Featured Builds</h3>
+        <div class="row">
+            <div class="col-md-4 featured-builds">
+                <a href="https://www.youtube.com/watch?v=Cp8SWi_0mgU" target="_blank">
+                    <img src="images/index/portal.jpg" alt="Build 1">
+                </a>
+                <h5 class="text-center mt-2">Sword Portal</h5>
+            </div>
+            <div class="col-md-4 featured-builds">
+                <a href="https://www.youtube.com/watch?v=2RsVYKOMV-0" target="_blank">
+                    <img src="images/index/pond.jpg" alt="Build 2">
+                </a>
+                <h5 class="text-center mt-2">Pond</h5>
+            </div>
+            <div class="col-md-4 featured-builds">
+                <a href="https://www.youtube.com/watch?v=U5bgUFtwL30" target="_blank">
+                    <img src="images/index/stall.jpg" alt="Build 3">
+                </a>
+                <h5 class="text-center mt-2">Market Stall</h5>
+            </div>
+        </div>
+    </div>
+    
+
+    <!-- Latest Updates Section -->
+    <div class="container mb-5 container-content" id="updates">
+        <h3 class="text-center">Latest Updates</h2>
+        <br>
+        <div class="row">
+            <div class="col-md-6 news">
+                <h5>1.20 Update - New Mobs and Biomes</h5>
+                <p>Discover the latest additions to Minecraft, including new mobs like the Warden, as well as the lush caves and deep dark biomes.</p>
+                <a href="https://www.si.com/videogames/guides/minecraft-1-20-update#:~:text=Minecraft%201.20%20new%20mobs%3A%20Camels%20and%20Sniffers,-Minecraft%20Sniffers%20can&text=On%20top%20of%20that%2C%20they,being%20added%20to%20the%20game." target="_blank">Source</a>
+            </div>
+            <div class="col-md-6">
+                <h5>New Blocks - Copper and Amethyst</h5>
+                <p>Learn about the new blocks introduced in the latest update and how to use them to enhance your builds and defenses.</p>
+                <a href="https://minecraft.fandom.com/wiki/Java_Edition_1.20">Source</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="top">
+            <a class="back" href="#top">Back To Top</a>
+        </div>
+        <br>
+        <div class="left">
+            <p>Created by <a href="https://renzomrtn.github.io/portfolio" target="_blank">Martin Fajardo</a></p>
+            <p>Inspired by <a href="https://www.minecraft.net/en-us" target="_blank">Official Minecraft Website</a></p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
